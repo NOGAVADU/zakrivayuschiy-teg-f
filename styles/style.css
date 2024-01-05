@@ -377,27 +377,27 @@
 }
 
 /* ФИЛЬТРА ДЛЯ КАРТИНОК В КАРТОЧКАХ */
-.dog{
-  filter: blur(5px);
+.clown{
+  filter: blur(15px) invert(0.2);
 }
 
-.flowerboy{
-  filter: hue-rotate(-90deg);
+.coder{
+  filter: hue-rotate(-90deg) sepia(0.5) saturate(70%);
 }
 
-.cockroach{
-  filter:s invert(100%);
+.train{
+  filter: hue-rotate(-180deg);
 }
 
-.punks{
-  filter: sepia();
+.frog{
+  filter: hue-rotate(-50deg) invert(0.2);
 }
 
-.cat{
-  filter: invert(1) saturate(60%) hue-rotate(90deg);
+.girl{
+  filter: blur(3px) invert(0.2) sepia(0.4);
 }
 
-.cuphead{
+.spanish{
   filter: sepia();
 }
 
