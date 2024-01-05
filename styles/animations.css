@@ -12,3 +12,33 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes choosenMenuItem {
+    form {
+        transform: translateX(-4px);
+    }
+
+    to {
+        transform: translateX(4px);
+    }
+}
+
+@keyframes heartGrow {
+    form {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes sparksDrop{
+    from{
+        fill: var(--bg-color);
+    }
+
+    to {
+        fill: var(--heart-body-color);
+    }
+}
