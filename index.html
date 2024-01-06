@@ -6,6 +6,11 @@
         <title>Закрывающий тег</title>
         <meta name="color-scheme" content="dark light" />
         <link rel="icon" href="./images/icon.svg" type="image/svg+xml" />
+        <link
+            rel="apple-touch-icon"
+            href="./images/apple-touch.png"
+            type="image/png"
+        />
         <link rel="stylesheet" href="./fonts/fonts.css" />
         <link rel="stylesheet" href="./styles/variables.css" />
         <link rel="stylesheet" href="./styles/globals.css" />
@@ -18,8 +23,8 @@
         <header class="header">
             <div class="header__container container">
                 <div class="header__content">
-                    <h1 class="header__title">&lt;/HTML&gt;</h1>
-                    <h2 class="header__subtitle">закрывающий тег</h2>
+                    <a href="" class="header__title">&lt;/HTML&gt;</a>
+                    <h1 class="header__subtitle">закрывающий тег</h1>
                     <nav class="theme-menu header__theme-menu">
                         <ul class="theme-menu__list">
                             <li class="theme-menu__item">
@@ -60,17 +65,17 @@
                 <ul class="cards__list">
                     <li class="cards__item">
                         <div class="card__container container">
-                            <h3 class="card__title">
+                            <h2 class="card__title">
                                 Делу время, а потехехехе...
-                            </h3>
+                            </h2>
                             <div class="card__img-container">
-                                <p class="card__img-text">
+                                <span class="card__img-text">
                                     &lt;/Шутки вместо сути&gt;
-                                </p>
+                                </span>
                                 <img
                                     src="./images/clown.jpg"
-                                    alt=""
-                                    class="card__img clown"
+                                    alt="Весьма угрюмый клоун в бледно желтом худи, выпускающий сигартеный дым"
+                                    class="card__img filter-blur-ivert"
                                 />
                             </div>
                             <div class="card__content">
@@ -81,8 +86,13 @@
                                     попались мне в поисковике :)
                                 </p>
                                 <div class="card__buttons">
-                                    <button class="card__icon-button button">
+                                    <button
+                                        type=""
+                                        button
+                                        class="card__icon-button button"
+                                    >
                                         <svg
+                                            aria-hidden="true"
                                             width="39"
                                             height="36"
                                             viewBox="0 0 39 36"
@@ -131,17 +141,17 @@
                     </li>
                     <li class="cards__item">
                         <div class="card__container container">
-                            <h3 class="card__title">
+                            <h2 class="card__title">
                                 1 анектод: С работы не ухожу
-                            </h3>
+                            </h2>
                             <div class="card__img-container">
-                                <p class="card__img-text">
+                                <span class="card__img-text">
                                     &lt;/Шутка про работу&gt;
-                                </p>
+                                </span>
                                 <img
                                     src="./images/coder.jpg"
-                                    alt=""
-                                    class="card__img coder"
+                                    alt="Девушка, нарисованная в аниме стиле, сидящая за комьютером на фоне ночного мегаполиса"
+                                    class="card__img filter-rotate-ivert"
                                 />
                             </div>
                             <div class="card__content">
@@ -151,8 +161,12 @@
                                     Интернете всегда столько интересного!
                                 </p>
                                 <div class="card__buttons">
-                                    <button class="card__icon-button button">
+                                    <button
+                                        type="button"
+                                        class="card__icon-button button"
+                                    >
                                         <svg
+                                            aria-hidden="true"
                                             width="39"
                                             height="36"
                                             viewBox="0 0 39 36"
@@ -188,6 +202,7 @@
                                         </svg>
                                     </button>
                                     <button
+                                        type="button"
                                         class="card__like-button button button-interactive"
                                     >
                                         <span
@@ -201,17 +216,15 @@
                     </li>
                     <li class="cards__item">
                         <div class="card__container container">
-                            <h3 class="card__title">
-                                2 анектод: Путешествия
-                            </h3>
+                            <h2 class="card__title">2 анектод: Путешествия</h2>
                             <div class="card__img-container">
-                                <p class="card__img-text">
+                                <span class="card__img-text">
                                     &lt;/Шутка про поезд-летун&gt;
-                                </p>
+                                </span>
                                 <img
                                     src="./images/train.jpg"
-                                    alt=""
-                                    class="card__img train"
+                                    alt="Фантастическое изображение вагона поезда, на сиденьях которого расположились видма и пришелец, похожий на многорукий огурец с кучей глаз. Под ногами космические собаки"
+                                    class="card__img filter-rotate-sapia-saturate"
                                 />
                             </div>
                             <div class="card__content">
@@ -221,8 +234,12 @@
                                     классом? – Нет, в плацкартном.
                                 </p>
                                 <div class="card__buttons">
-                                    <button class="card__icon-button button">
+                                    <button
+                                        type="button"
+                                        class="card__icon-button button"
+                                    >
                                         <svg
+                                            aria-hidden="true"
                                             width="39"
                                             height="36"
                                             viewBox="0 0 39 36"
@@ -271,17 +288,17 @@
                     </li>
                     <li class="cards__item">
                         <div class="card__container container">
-                            <h3 class="card__title">
+                            <h2 class="card__title">
                                 3 анектод: А если не получится?
-                            </h3>
+                            </h2>
                             <div class="card__img-container">
-                                <p class="card__img-text">
+                                <span class="card__img-text">
                                     &lt;/Лягушку жалко&gt;
-                                </p>
+                                </span>
                                 <img
                                     src="./images/frog.jpg"
-                                    alt=""
-                                    class="card__img frog"
+                                    alt="Две нарисованные лягушки сидят и пьют какой-то напиток из жестяных банок."
+                                    class="card__img filter-rotate"
                                 />
                             </div>
                             <div class="card__content">
@@ -292,8 +309,12 @@
                                     приходится….
                                 </p>
                                 <div class="card__buttons">
-                                    <button class="card__icon-button button">
+                                    <button
+                                        type="button"
+                                        class="card__icon-button button"
+                                    >
                                         <svg
+                                            aria-hidden="true"
                                             width="39"
                                             height="36"
                                             viewBox="0 0 39 36"
@@ -342,17 +363,15 @@
                     </li>
                     <li class="cards__item">
                         <div class="card__container container">
-                            <h3 class="card__title">
-                                4 анектод: Помолчим
-                            </h3>
+                            <h2 class="card__title">4 анектод: Помолчим</h2>
                             <div class="card__img-container">
-                                <p class="card__img-text">
+                                <span class="card__img-text">
                                     &lt;/Девочку жалко&gt;
-                                </p>
+                                </span>
                                 <img
                                     src="./images/girl.jpg"
-                                    alt=""
-                                    class="card__img girl"
+                                    alt="Девушка, нарисованная в аниме стиле, пьет через противогаз кофе"
+                                    class="card__img filter-blur"
                                 />
                             </div>
                             <div class="card__content">
@@ -366,8 +385,12 @@
                                     Улыбка ее делала просто отвратительной…
                                 </p>
                                 <div class="card__buttons">
-                                    <button class="card__icon-button button">
+                                    <button
+                                        type="button"
+                                        class="card__icon-button button"
+                                    >
                                         <svg
+                                            aria-hidden="true"
                                             width="39"
                                             height="36"
                                             viewBox="0 0 39 36"
@@ -416,17 +439,15 @@
                     </li>
                     <li class="cards__item">
                         <div class="card__container container">
-                            <h3 class="card__title">
-                                5 анектод: Испанцы
-                            </h3>
+                            <h2 class="card__title">5 анектод: Испанцы</h2>
                             <div class="card__img-container">
-                                <p class="card__img-text">
+                                <span class="card__img-text">
                                     &lt;/Нормальные имена&gt;
-                                </p>
+                                </span>
                                 <img
                                     src="./images/spanish.jpg"
-                                    alt=""
-                                    class="card__img spanish"
+                                    alt="Два человека в костюме призраков стоят, взявшись за руки, в кукурузном поле"
+                                    class="card__img filter-sepia"
                                 />
                             </div>
                             <div class="card__content">
@@ -439,8 +460,12 @@
                                     зовут Хулио, Педрос, Кончитос…
                                 </p>
                                 <div class="card__buttons">
-                                    <button class="card__icon-button button">
+                                    <button
+                                        type="button"
+                                        class="card__icon-button button"
+                                    >
                                         <svg
+                                            aria-hidden="true"
                                             width="39"
                                             height="36"
                                             viewBox="0 0 39 36"
@@ -489,13 +514,17 @@
                     </li>
                     <li class="cards__item">
                         <div class="card__container container">
-                            <h3 class="card__title">6 анектод: Сообщение по радио</h3>
+                            <h2 class="card__title">
+                                6 анектод: Сообщение по радио
+                            </h2>
                             <div class="card__img-container">
-                                <p class="card__img-text">&lt;/Главное- музыка&gt;</p>
+                                <span class="card__img-text"
+                                    >&lt;/Главное- музыка&gt;</span
+                                >
                                 <img
                                     src="./images/skeleton.jpg"
-                                    alt=""
-                                    class="card__img skeleton"
+                                    alt="Скелет в деловом костюме слушает музыку из огромных компьютерных наушников"
+                                    class="card__img filter-blur-invert-epia"
                                 />
                             </div>
                             <div class="card__content">
@@ -507,8 +536,12 @@
                                     пока, легкая музыка!»
                                 </p>
                                 <div class="card__buttons">
-                                    <button class="card__icon-button button">
+                                    <button
+                                        type="button"
+                                        class="card__icon-button button"
+                                    >
                                         <svg
+                                            aria-hidden="true"
                                             width="39"
                                             height="36"
                                             viewBox="0 0 39 36"
@@ -576,12 +609,14 @@
                             Вставьте дискету, чтобы продолжить
                         </p>
                     </div>
-                    <button
-                        class="modal__button button button-interactive"
-                        onclick="window['modal'].close()"
-                    >
-                        <span class="button__text">Ок</span>
-                    </button>
+                    <form method="dialog">
+                        <button
+                            class="modal__button button button-interactive"
+                            onclick="window['modal'].close()"
+                        >
+                            <span class="button__text">Ок</span>
+                        </button>
+                    </form>
                 </dialog>
                 <button
                     class="save__button button button-interactive"

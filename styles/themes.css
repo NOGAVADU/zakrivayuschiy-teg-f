@@ -30,6 +30,12 @@
     --heart-contour-color: #00cc14;
     --heart-hover-color: #000;
     --heart-body-color: #ff0000;
+    .button__text {
+        color: var(--main-color);
+    }
+    .save__button-icon {
+        color: var(--main-color);
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -52,5 +58,13 @@
         --heart-contour-color: #00cc14;
         --heart-hover-color: #000;
         --heart-body-color: #ff0000;
+    }
+    :root.theme-auto{
+        .button__text {
+            color: var(--main-color);
+        }
+        .save__button-icon {
+            color: var(--main-color);
+        }
     }
 }

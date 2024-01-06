@@ -42,3 +42,59 @@
         fill: var(--heart-body-color);
     }
 }
+
+/* АНИМАЦИЯ СЕРДЦА */
+.like-icon.is-liked {
+    animation: heartGrow 0.3s ease-in 0.1s 2 alternate;
+}
+
+.like-icon .main-body {
+    fill: var(--bg-color);
+    transition: all 0.3s 0.05s linear;
+}
+
+.like-icon .core {
+    transition: all 0.3s linear;
+    fill: var(--bg-color);
+}
+
+.like-icon .contour {
+    transition: all 0.3s 0.06s linear;
+    fill: var(--heart-contour-color);
+}
+
+.like-icon:hover .main-body {
+    fill: var(--heart-contour-color);
+}
+
+.like-icon:hover .core {
+    fill: var(--heart-contour-color);
+}
+
+.like-icon:active .main-body {
+    fill: var(--heart-body-color);
+}
+
+.like-icon:active .core {
+    fill: var(--heart-body-color);
+}
+
+.like-icon.is-liked .core {
+    fill: var(--heart-body-color);
+}
+
+.like-icon.is-liked .main-body {
+    fill: var(--heart-body-color);
+}
+
+.like-icon.is-liked .contour {
+    fill: var(--heart-body-color);
+}
+
+.sparks {
+    fill: var(--bg-color);
+}
+
+.like-icon.is-liked .sparks {
+    animation: sparksDrop 0.3s ease-in 0.3s 2 alternate;
+}
