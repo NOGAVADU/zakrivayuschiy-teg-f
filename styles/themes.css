@@ -10,6 +10,7 @@
         ),
         repeating-linear-gradient(to bottom, transparent 0 2px, #d3d3d3 2px 4px),
         linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+    --button-text-color: #fff;
     --heart-contour-color: #000;
     --heart-hover-color: #000;
     --heart-body-color: #ff0000;
@@ -27,15 +28,10 @@
         ),
         repeating-linear-gradient(to bottom, transparent 0 2px, #000 2px 4px),
         linear-gradient(#007f0c, #004306);
+    --button-text-color: #00cc14;
     --heart-contour-color: #00cc14;
     --heart-hover-color: #000;
     --heart-body-color: #ff0000;
-    .button__text {
-        color: var(--main-color);
-    }
-    .save__button-icon {
-        color: var(--main-color);
-    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -55,16 +51,10 @@
                 #000 2px 4px
             ),
             linear-gradient(#007f0c, #004306);
+        --button-text-color: #00cc14;
+
         --heart-contour-color: #00cc14;
         --heart-hover-color: #000;
         --heart-body-color: #ff0000;
-    }
-    :root.theme-auto{
-        .button__text {
-            color: var(--main-color);
-        }
-        .save__button-icon {
-            color: var(--main-color);
-        }
     }
 }

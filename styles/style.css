@@ -49,7 +49,7 @@
 .button__text {
     position: relative;
     z-index: 2;
-    color: var(--bg-color);
+    color: var(--button-text-color);
     mix-blend-mode: difference;
     line-height: 90%;
 }
@@ -61,9 +61,7 @@
 }
 
 .button-interactive:hover {
-    color: var(--main-color);
-    /* mix-blend-mode: difference; */
-    /* border: 2px solid var(--bg-color); */
+
 }
 
 .button-interactive::before {
@@ -88,6 +86,7 @@
 }
 
 .button-interactive:focus-visible {
+    transition: all 0.3s ease;
     box-shadow: 2px 2px 0 0 var(--main-color);
 }
 
@@ -173,6 +172,25 @@
     animation: choosenMenuItem 0.5s ease-in-out infinite alternate;
 }
 
+@media (width <= 375px) {
+    .header__content {
+        padding: clamp(7.5rem, 5rem + 8vw, 8.5rem) 0 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header__title {
+        margin-bottom: 20px;
+    }
+
+    .theme-menu__list {
+        margin-inline-start: 20px;
+    }
+    
+}
+
 /* ОСНОВНОЙ КОНТЕНТ СТРАНИЦЫ */
 .cards__list {
     display: flex;
@@ -184,7 +202,7 @@
     font-size: 18px;
     font-variation-settings: "wght" var(--font-title-weight);
     border-bottom: 2px solid var(--main-color);
-    padding: 3px;
+    padding: 5px 8px 3px;
 }
 
 .card__img-container {
@@ -196,8 +214,8 @@
     z-index: 1;
     font-family: var(--font-accent), sans-serif;
     font-size: 14px;
-    top: 25px;
-    right: 25px;
+    top: clamp(0.625rem, 0.2949rem + 1.4085vw, 1.5625rem);
+    right:  clamp(0.625rem, 0.2949rem + 1.4085vw, 1.5625rem);
     opacity: 0.5;
     text-shadow: -1px 0 var(--bg-color), 0 1px var(--bg-color),
         1px 0 var(--bg-color), 0 -1px var(--bg-color);
@@ -265,8 +283,8 @@
     margin: 55px auto 0;
     background-color: var(--bg-color);
     border: 2px solid var(--main-color);
-    width: clamp(19.0625rem, 14.375rem + 15vw, 22rem);
-    padding: 15px 20px;
+    width: clamp(19.0625rem, 14.375rem + 15vw, 21rem);
+    padding: 15px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,7 +293,7 @@
 
 .save__button-icon {
     position: relative;
-    color: var(--bg-color);
+    color: var(--button-text-color);
     mix-blend-mode: difference;
     flex: 0 0 21px;
     height: 21px;
