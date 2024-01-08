@@ -58,10 +58,7 @@
     position: relative;
     color: var(--main-color);
     border: 2px solid var(--main-color);
-}
-
-.button-interactive:hover {
-
+    transition: all 0.3s ease;
 }
 
 .button-interactive::before {
@@ -86,7 +83,6 @@
 }
 
 .button-interactive:focus-visible {
-    transition: all 0.3s ease;
     box-shadow: 2px 2px 0 0 var(--main-color);
 }
 
@@ -214,7 +210,7 @@
     z-index: 1;
     font-family: var(--font-accent), sans-serif;
     font-size: 14px;
-    top: clamp(0.625rem, 0.2949rem + 1.4085vw, 1.5625rem);
+    top: 25px;
     right:  clamp(0.625rem, 0.2949rem + 1.4085vw, 1.5625rem);
     opacity: 0.5;
     text-shadow: -1px 0 var(--bg-color), 0 1px var(--bg-color),
